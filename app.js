@@ -253,7 +253,7 @@ var UIController = (function(){
 
             int = numSplit[0]
             if (int.length > 3){
-                
+
             }
 
 
