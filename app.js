@@ -233,6 +233,38 @@ var UIController = (function(){
             document.querySelector(element).insertAdjacentHTML('beforeend', newHtml)
 
         },
+
+        formatNumber: function(num, type){
+            var numSplit, int, dec;
+            /**
+             + or - before number
+             exactly 2 decimal points
+             comma separating the thousands
+
+             2310.4567 -> + 2310.46
+             2000 -> + 2000.00
+
+             */
+
+            num = Math.abs(num)
+            num = num.toFixed(2)
+            
+            numSplit = num.split('.')
+
+            int = numSplit[0]
+            if (int.length > 3){
+                
+            }
+
+
+            dec = numSplit[1]
+
+
+        },
+        
+
+
+
         getDOMstrings: function(){
             return DOMstrings;
         },
